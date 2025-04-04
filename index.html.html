@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Агро Фірма</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+        }
+        .gallery, .multimedia, .animation {
+            margin: 20px;
+        }
+        .inline-img img {
+            width: 200px;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+        .inline-img img:hover {
+            transform: scale(1.1);
+        }
+        .multimedia-video video {
+            width: 30%;
+            margin: 10px;
+        }
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 20px auto;
+            animation: spin 4s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ласкаво просимо на сайт Агро Фірми</h1>
+    </header>
+    
+    <section class="gallery">
+        <h2>Галерея</h2>
+        <div class="inline-img">
+            <img src="images/1.jpg" alt="Ферма">
+            <img src="images/2.jpg" alt="Поле">
+            <img src="images/3.jpg" alt="Трактор">
+            <img src="images/4.jpg" alt="Врожай">
+        </div>
+    </section>
+    
+    <section class="multimedia">
+        <h2>Наші Відео</h2>
+        <div class="multimedia-video">
+            <video controls>
+                <source src="video/movie1.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="video/movie2.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="video/movie3.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    
+    <section class="animation">
+        <h2>Анімація</h2>
+        <div class="square"></div>
+    </section>
+</body>
+</html>
